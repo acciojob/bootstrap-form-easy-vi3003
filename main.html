@@ -3,13 +3,93 @@
 <html>
 
 <head>
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles.css">
+	<title>Bootstrap Form</title>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<header>
+		<h1>Intership Form</h1>
+	</header>
+	<main>
+		<form class="row g-3">
+			<!-- 1st row  -->
+			<div class="col-md-4">
+				<label class="form-label" for="first-name-input">First Name</label>
+				<input type="text" class="form-control" id="first-name-input" placeholder="" required>
+				<div id="validationServer03Feedback" class="invalid-feedback">
+					Please provide a valid city.
+				  </div>
+			</div>
+			<div class="col-md-4">
+				<labelclass="form-label"  for="last-name-input">Last Name</label>
+				<input type="text" class="form-control" id="last-name-input" placeholder="" required>
+				<div id="validationServer03Feedback" class="invalid-feedback">
+					Please provide a valid city.
+				  </div>
+			</div>
+			<div class="col-md-4">
+				<labelclass="form-label"  for="email-input">Email Address</label>
+				<input type="email" class="form-control" id="email-input" placeholder="xyz@abc.com" required>
+				<div id="validationServer03Feedback" class="invalid-feedback">
+					Please provide a valid city.
+				  </div>
+			</div>
+
+			<!-- 2nd row  -->
+			<div class="col-md-6">
+				<labelclass="form-label"  for="college-input">College</label>
+				<input type="text" class="form-control" id="college-input" required>
+				<div id="validationServer03Feedback" class="invalid-feedback">
+					Please provide a valid city.
+				  </div>
+			</div>
+			<div class="col-md-4">
+				<label class="form-label" for="grad-year-select" class="form-label">Graduation Year</label>
+				<select id="grad-year-select" class="form-select" required>
+					<option selected>Choose...</option>
+					<option>2020</option>
+					<option>2021</option>
+					<option>2022</option>
+					<option>2023</option>
+				</select>
+				<div id="validationServer03Feedback" class="invalid-feedback">
+					Please provide a valid city.
+				  </div>
+			</div>
+			<div class="col-md-2">
+				<labelclass="form-label"  for="roll-no-input" class="form-label">Roll No.</label>
+				<input type="text" class="form-control" id="roll-no-input" required>
+				<div id="validationServer03Feedback" class="invalid-feedback">
+					Please provide a valid city.
+				  </div>
+			</div>
+			<div class="col-12">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" id="conditions-checkbox" required>
+					<div id="validationServer03Feedback" class="invalid-feedback">
+						Please provide a valid city.
+					  </div>
+					<label class="form-check-label" for="conditions-checkbox">
+						Agree to terms and conditions
+					</label>
+				</div>
+			</div>
+			<div class="col-12">
+				<button type="submit" class="btn btn-primary">Submit form</button>
+			</div>
+		</form>
+	</main>
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./script.js">
+	</script>
 
 </body>
 
